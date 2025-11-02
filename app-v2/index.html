@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AWS & DevOps Q&A </title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="main-page" class="container">
+  <div class="image-container">
+    <img src="image/interview.png" alt="Beautiful landscape">
+  </div>
+  <h1 class="title">AWS & DevOps Interview Question and Answers by Reyaz</h1>
+
+  <div class="section">
+    <h2 class="section-title">AWS Services</h2>
+    <div class="card-container">
+      
+      <div class="card" onclick="openSection('aws','EC2')">Amazon EC2</div>
+      <div class="card" onclick="openSection('aws','S3')">Amazon S3</div>
+      <div class="card" onclick="openSection('aws','IAM')">Amazon IAM</div>
+      <div class="card" onclick="openSection('aws','LAMBDA')">Amazon LAMBDA</div>
+      <div class="card" onclick="openSection('aws','ALB')">Amazon ALB</div>
+      <div class="card" onclick="openSection('aws','ROUTE53')">Amazon ROUTE53</div>
+      <div class="card" onclick="openSection('aws','NLB')">Amazon LOAD-BALANCER</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2 class="section-title">DevOps Tools</h2>
+    <div class="card-container">
+     
+      <div class="card" onclick="openSection('devops','GIT')">GIT</div>
+      <div class="card" onclick="openSection('devops','GITHUB')">GITHUB</div>
+      <div class="card" onclick="openSection('devops','ANSIBLE')">ANSIBLE</div>
+      <div class="card" onclick="openSection('devops','MAVEN')">MAVEN</div>
+      <div class="card" onclick="openSection('devops','JENKINS')">JENKINS</div>
+      <div class="card" onclick="openSection('devops','DOCKER')">DOCKER</div>
+      <div class="card" onclick="openSection('devops','KUBERNETES')">KUBERNETES</div>
+    </div>
+  </div>
+</div>
+
+<div id="qa-page" class="container hidden">
+  <h1 id="section-title"></h1>
+  <div class="qa-box">
+    <p id="counter" class="counter"></p>
+    <h3 id="question"></h3>
+    <p id="answer"></p>
+  </div>
+  <div class="nav-buttons">
+    <button id="prevBtn" class="nav-btn" onclick="prevQuestion()">⟵ Prev</button>
+    <button id="nextBtn" class="nav-btn" onclick="nextQuestion()">Next ⟶</button>
+  </div>
+  <button class="menu-btn" onclick="goHome()">🏠 Main Menu</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
